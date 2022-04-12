@@ -1,0 +1,25 @@
+{
+  "name": "trickert",
+  "version": "1.0.0",
+  "description": "Sitio Web de Trickert",
+  "main": "index.js",
+  "scripts": {
+    "sass": "dart-sass src/scss:build/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gyrkora/trickert.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gyrkora/trickert/issues"
+  },
+  "homepage": "https://github.com/Gyrkora/trickert#readme",
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^7.0.1"
+  }
+}
