@@ -4,7 +4,7 @@
   "description": "Sitio Web de Trickert",
   "main": "index.js",
   "scripts": {
-    "sass": "dart-sass src/scss:build/css"
+    "sass": "dart-sass --watch src/scss:build/css"
   },
   "repository": {
     "type": "git",
