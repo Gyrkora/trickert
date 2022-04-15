@@ -1,5 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
 body {
   background-color: #2c2929;
+}
+
+.caratula-container {
+  border: 1px white solid;
+  padding: 2rem 0;
+}
+
+.caratula-innerContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 95%;
+  border-radius: 1.6rem;
+}
+
+.caratula-item {
+  padding: 2rem 0;
+  border-radius: 1.6rem;
+  padding: 1rem;
+}
+
+.caratula-item-izquierda {
+  background-color: #0b0f1a;
+  border: 3px solid black;
+  height: 30rem;
+  color: white;
+  display: flex;
+  flex-wrap: column;
+  align-items: center;
+}
+.caratula-item-izquierda .img-caratula {
+  background-image: url("../../img/PortadaOne.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+}
+
+.caratula-item-derecha {
+  background-color: violet;
+  border-bottom: 3px solid #9f1fb6;
 }
 
 /* navbar */
