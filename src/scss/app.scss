@@ -1,17 +1,22 @@
+// # Abstract
 
-// #-Base 
-@import 'base/variables'; //no olvidar poner el punto y coma final
-@import 'base/globales';
+@import "abstract/extends";
+@import "abstract/mixins";
+@import "abstract/variables";
 
+// #-Base
+@import "base/reset";
+@import "base/tipografia";
 
 // #-Utilities
 
-
-
-
-// #-body
-
-
-
+// #-Componentes
+@import "components/caratula";
+@import "components/botones";
 
 // #-layouts
+@import "layout/footer";
+@import "layout/header";
+
+// # Responsive
+@import "base/responsive";
