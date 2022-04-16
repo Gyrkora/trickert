@@ -41,20 +41,42 @@ body {
   height: 30rem;
   color: white;
   display: flex;
-  flex-wrap: column;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 }
-.caratula-item-izquierda .img-caratula {
+.caratula-item-izquierda .caratula-item-layout {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 10rem;
+}
+.caratula-item-izquierda .caratula-item-layout .img-caratulaContainer {
+  position: relative;
+}
+.caratula-item-izquierda .caratula-item-layout .img-caratulaContainer .img-caratula {
   background-image: url("../../img/PortadaOne.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 300px;
+  height: 222px;
+  width: 222px;
+  top: -50px;
+  right: -2px;
+  left: 30px;
+  position: absolute;
+}
+.caratula-item-izquierda .caratula-item-layout .titulo-imgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
 }
 
 .caratula-item-derecha {
   background-color: violet;
   border-bottom: 3px solid #9f1fb6;
+  margin-left: -20px;
 }
 
 /* navbar */
