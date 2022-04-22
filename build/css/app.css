@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 body {
   background-color: #2c2929;
 }
 
 p,
 h1,
-h2,
 h3,
 h4 {
   font-family: "Lato", sans-serif;
@@ -27,7 +27,7 @@ h4 {
 }
 
 .in-bold {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .m-0 {
@@ -286,6 +286,10 @@ h4 {
   padding: 2rem 0;
   margin: 3rem auto;
 }
+.caratula-container h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2rem;
+}
 
 .caratula-innerContainer {
   display: grid;
@@ -356,10 +360,11 @@ h4 {
   text-align: center;
 }
 
-.caratula-item-izquierda-n {
+.caratula-item-total {
   background-color: #0b0f1a;
   border: 3px solid black;
   color: white;
+  max-width: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -369,7 +374,6 @@ h4 {
 
 .img-container {
   padding: 3rem 3rem 1.5rem 3rem;
-  max-width: 50rem;
 }
 
 .img-caratula-album3 {
@@ -383,7 +387,7 @@ h4 {
 }
 
 .caratula-item-derecha-n {
-  background-color: violet;
+  background-color: #ee82ee;
   display: flex;
   flex-direction: column;
   align-items: center;

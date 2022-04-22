@@ -6,7 +6,10 @@
 .caratula-container {
 	padding: 2rem 0;
 	margin: 3rem auto;
-	// box-shadow: 3px 0px 10px 1px #000 inset;
+	h2 {
+		font-family: $titulofont;
+		font-size: 2rem;
+	}
 }
 
 .caratula-innerContainer {
@@ -83,10 +86,12 @@
 
 // # 2da caratula de album
 
-.caratula-item-izquierda-n {
+.caratula-item-total {
 	background-color: $lightBlack;
 	border: 3px solid black;
 	color: white;
+	max-width: 40rem;
+	// width: 40rem; //#
 
 	display: flex;
 	flex-direction: column;
@@ -97,18 +102,19 @@
 
 .img-container {
 	padding: 3rem 3rem 1.5rem 3rem;
-	max-width: 50rem;
 }
 
 .img-caratula-album3 {
 	@include bg-image('../../img/albums/horizonAlbum.jpg');
 	width: 50vmin;
 	height: 50vmin;
+	// width: 35rem; //#
+	// max-width: 99%; //#
 	border-radius: 1.6rem;
 }
 
 .caratula-item-derecha-n {
-	background-color: violet;
+	background-color: #ee82ee;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
