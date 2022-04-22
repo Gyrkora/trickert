@@ -1,23 +1,23 @@
 // # Abstract
 
-@import "abstract/extends";
-@import "abstract/mixins";
-@import "abstract/variables";
-@import "abstract/utilities";
+@import 'abstract/extends';
+@import 'abstract/mixins';
+@import 'abstract/variables';
 
 // #-Base
-@import "base/reset";
-@import "base/tipografia";
+@import 'base/tipografia';
+@import 'base/reset';
 
 // #-Utilities
+@import 'abstract/utilities';
 
 // #-Componentes
-@import "components/caratula";
-@import "components/botones";
+@import 'components/caratula';
+@import 'components/botones';
 
 // #-layouts
-@import "layout/footer";
-@import "layout/header";
+@import 'layout/footer';
+@import 'layout/header';
 
 // # Responsive
-@import "base/responsive";
+@import 'base/responsive';

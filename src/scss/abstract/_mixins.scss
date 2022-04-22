@@ -6,3 +6,11 @@
     position: center center;
   }
 }
+@mixin bg-image2($url) {
+  background: {
+    image: url($url);
+    repeat: no-repeat;
+    size: cover;
+    position: center center;
+  }
+}
