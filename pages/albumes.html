@@ -43,6 +43,13 @@
 						<h2>caja derecha</h2>
 						<div>
 							<h3>Horizon</h3>
+							<audio id="player"  src="../assets/music/song1.wav"></audio>
+              <div class="botonesV"> 
+                <button class="btn1" onclick="document.getElementById('player').play()">Play</button> 
+                <button class="btn2" onclick="document.getElementById('player').pause()">Pause</button> 
+                <button class="btn3" onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
+                <button class="btn4" onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+              </div>
 							<h3>Mystery</h3>
 							<h3>Angles Cry</h3>
 							<h3>Night City</h3>
@@ -93,14 +100,49 @@
 					<div class="caratula-item caratula-item-derecha">
 						<h2 class="in-bold">caja derecha</h2>
 						<div>
-							<h3>Horizon</h3>
-							<h3>Mystery</h3>
-							<h3>Angles Cry</h3>
-							<h3>Night City</h3>
-							<h3>Play Game</h3>
-							<h3>Red Dot</h3>
-							<h3>Vibes</h3>
-							<h3>Welcome</h3>
+             
+              <div class="playlist-container">
+                <h3>Horizon</h3>
+
+                <div>
+                  <audio id="player"  src="../assets/music/song1.wav"></audio>
+				  <div class="botonesN"> 
+					<button class="btn1" onclick="document.getElementById('player').play()">Play</button> 
+					<button class="btn2" onclick="document.getElementById('player').pause()">Pause</button> 
+					<button class="btn3" onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
+					<button class="btn4" onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+				  </div>
+							
+                </div>
+
+              </div>
+
+              <div class="playlist-container">
+                <h3>Mystery</h3>
+
+                <div>
+                  <audio id="player"  src="../assets/music/song1.wav"></audio>
+                  <div> 
+                    <div class="botonesN"> 
+						<button class="btn1" onclick="document.getElementById('player').play()">Play</button> 
+						<button class="btn2" onclick="document.getElementById('player').pause()">Pause</button> 
+						<button class="btn3" onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
+						<button class="btn4" onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+					  </div>
+					
+                  </div>
+                </div>
+
+              </div>
+               
+                <h3>Angles Cry</h3>
+                <h3>Night City</h3>
+                <h3>Play Game</h3>
+                <h3>Red Dot</h3>
+                <h3>Vibes</h3>
+                <h3>Welcome</h3>
+
+              </div>
 						</div>
 					</div>
 				</div>
@@ -122,6 +164,13 @@
 
 								<div class="texto-izquierdo">
 									<h1>Horizon</h1>
+                  <audio id="player"  src="../assets/music/song1.wav"></audio>
+              <div> 
+                <button class="boton" onclick="document.getElementById('player').play()">Play</button> 
+                <button onclick="document.getElementById('player').pause()">Pause</button> 
+                <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
+                <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+              </div>
 									<h4>Segundo álbum</h4>
 								</div>
 							</div>
@@ -174,6 +223,13 @@
 
             
 							<h3 >Horizon</h3>
+              <audio id="player"  src="../assets/music/song1.wav"></audio>
+			  <div class="botonesN"> 
+				<button class="btn1" onclick="document.getElementById('player').play()">Play</button> 
+				<button class="btn2" onclick="document.getElementById('player').pause()">Pause</button> 
+				<button class="btn3" onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
+				<button class="btn4" onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
+			  </div>
 							<h3>Mystery</h3>
 							<h3>Angles Cry</h3>
 							<h3>Night City</h3>
@@ -186,12 +242,9 @@
 				</div>
 			</div>
 		</div>
+ 
 
-    <audio controls>
-      <source src="" type="audio/ogg">
-      <source src="horse.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-    </audio>
+		<!-- <audio id="player"  controls src="../assets/music/song1.wav"></audio> --> 
   
 	</body>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -125,8 +125,65 @@
 
 .texto-izquierdo {
 	h1 {
-		margin: 0;
+		margin: 0 0 1rem 0;
 	}
 
 	margin-bottom: 2rem;
+}
+
+.playlist-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.boton {
+	background-color: #fe6d24;
+	border-radius: 1.6rem;
+}
+
+.botonesV {
+	button {
+		border-radius: 1.6rem;
+	}
+
+	.btn1 {
+		background-color: #cc2c6c;
+	}
+	.btn2 {
+		background-color: #cb497d;
+	}
+	.btn3 {
+		background-color: #c56c90;
+	}
+	.btn4 {
+		background-color: #d49ab1;
+	}
+}
+
+.botonesN {
+	button {
+		border-radius: 1.6rem;
+	}
+
+	.btn1 {
+		background-color: #fe6d24;
+	}
+	.btn2 {
+		background-color: #e7895a;
+	}
+	.btn3 {
+		background-color: #faba9b;
+	}
+	.btn4 {
+		background-color: #edc5b1;
+	}
+}
+
+#player {
+	width: 500px;
+	height: 20px;
+	border: 2px solid white;
 }
