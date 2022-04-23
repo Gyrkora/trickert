@@ -293,81 +293,16 @@ h4 {
 
 .caratula-innerContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 40% 60%;
+  width: 100rem;
   max-width: 95%;
-  border-radius: 1.6rem;
-  box-shadow: 0px 4px 15px -4px #9f1fb6;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 8px 10px -6px #00ff01;
+  -moz-box-shadow: 0 8px 10px -6px #00ff01;
+  box-shadow: 0 8px 10px -6px #00ff01;
 }
 
-.caratula-innerContainer2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 95%;
-  border-radius: 1.6rem;
-  box-shadow: 0px 4px 15px -4px #31c38e;
-}
-
-.caratula-item {
-  padding: 2rem 0;
-  border-radius: 1.6rem;
-  padding: 1rem;
-}
-
-.caratula-item-izquierda {
-  background-color: #0b0f1a;
-  border: 3px solid black;
-  height: 30rem;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-.caratula-item-izquierda .caratula-item-layout {
-  display: grid;
-  grid-template-columns: 55% 45%;
-  justify-content: flex-start;
-  align-items: center;
-  padding-bottom: 10rem;
-}
-.caratula-item-izquierda .caratula-item-layout .img-caratulaContainer {
-  position: relative;
-}
-.caratula-item-izquierda .caratula-item-layout .img-caratulaContainer .img-caratula-album1, .caratula-item-izquierda .caratula-item-layout .img-caratulaContainer .img-caratula-album2 {
-  background-image: url("../../img/albums/tokioAlbum.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 250px;
-  width: 250px;
-  top: -50px;
-  right: -2px;
-  left: 30px;
-  position: absolute;
-}
-.caratula-item-izquierda .caratula-item-layout .img-caratulaContainer .img-caratula-album2 {
-  background-image: url("../../img/albums/horizonAlbum.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.caratula-item-izquierda .caratula-item-layout .titulo-imgContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: flex-start;
-}
-
-.caratula-item-derecha {
-  background-color: #31c38e;
-  margin-left: -20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.caratula-item-total {
+.caratula-izquierda {
   background-color: #0b0f1a;
   border: 3px solid black;
   color: white;
@@ -378,86 +313,55 @@ h4 {
   align-items: center;
   text-align: center;
 }
-
-.img-container {
+.caratula-izquierda .img-container {
   padding: 3rem 3rem 1.5rem 3rem;
 }
-
-.img-caratula-album3 {
+.caratula-izquierda .img-container .img-caratula-album3 {
   background-image: url("../../img/albums/horizonAlbum.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   width: 50vmin;
   height: 50vmin;
-  border-radius: 1.6rem;
+}
+.caratula-izquierda .texto-izquierdo {
+  margin-bottom: 2rem;
+}
+.caratula-izquierda .texto-izquierdo h1 {
+  margin: 0 0 1rem 0;
 }
 
-.caratula-item-derecha-n {
-  background-color: #ee82ee;
+.contenedor-playlist {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.contenedor-playlist .b-g-playlist {
+  background-image: url("../../img/albums/horizonAlbum.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  height: 100%;
+  width: 100%;
   text-align: center;
 }
-
-.texto-izquierdo {
-  margin-bottom: 2rem;
-}
-.texto-izquierdo h1 {
-  margin: 0 0 1rem 0;
-}
-
-.playlist-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.boton {
-  background-color: #fe6d24;
-  border-radius: 1.6rem;
-}
-
-.botonesV button {
-  border-radius: 1.6rem;
-}
-.botonesV .btn1 {
-  background-color: #cc2c6c;
-}
-.botonesV .btn2 {
-  background-color: #cb497d;
-}
-.botonesV .btn3 {
-  background-color: #c56c90;
-}
-.botonesV .btn4 {
-  background-color: #d49ab1;
-}
-
-.botonesN button {
-  border-radius: 1.6rem;
-}
-.botonesN .btn1 {
-  background-color: #fe6d24;
-}
-.botonesN .btn2 {
-  background-color: #e7895a;
-}
-.botonesN .btn3 {
-  background-color: #faba9b;
-}
-.botonesN .btn4 {
-  background-color: #edc5b1;
-}
-
-#player {
-  width: 500px;
-  height: 20px;
-  border: 2px solid white;
+.contenedor-playlist .playlist {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
 }
 
 /* navbar */

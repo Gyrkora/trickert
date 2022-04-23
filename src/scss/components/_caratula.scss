@@ -14,87 +14,21 @@
 
 .caratula-innerContainer {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: 40% 60%;
+	width: 100rem;
 	max-width: 95%;
-	border-radius: 1.6rem;
-	// box-shadow: 0px 4px 10px -0px #9f1fb6;
-	box-shadow: 0px 4px 15px -4px #9f1fb6;
-}
-.caratula-innerContainer2 {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	max-width: 95%;
-	border-radius: 1.6rem;
-	// box-shadow: 0px 4px 10px -0px #9f1fb6;
-	box-shadow: 0px 4px 15px -4px #31c38e;
-}
-
-.caratula-item {
-	padding: 2rem 0;
-	border-radius: 1.6rem;
-	padding: 1rem;
-}
-.caratula-item-izquierda {
-	background-color: $lightBlack;
-	border: 3px solid black;
-	height: 30rem;
-	color: white;
-
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-
-	.caratula-item-layout {
-		display: grid;
-		grid-template-columns: 55% 45%;
-		justify-content: flex-start;
-		align-items: center;
-		padding-bottom: 10rem;
-
-		.img-caratulaContainer {
-			position: relative;
-
-			.img-caratula-album1 {
-				@include bg-image('../../img/albums/tokioAlbum.jpg');
-				height: 250px;
-				width: 250px;
-				top: -50px;
-				right: -2px;
-				left: 30px;
-				position: absolute;
-			}
-
-			.img-caratula-album2 {
-				@extend .img-caratula-album1;
-				@include bg-image('../../img/albums/horizonAlbum.jpg');
-			}
-		}
-
-		.titulo-imgContainer {
-			display: flex;
-			flex-direction: column;
-			justify-content: left;
-			align-items: flex-start;
-		}
-	}
-}
-
-.caratula-item-derecha {
-	background-color: #31c38e; //violet;
-	// border-bottom: 3px solid #9f1fb6;
-	margin-left: -20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
+	border-radius: 2rem;
+	-webkit-box-shadow: 0 8px 10px -6px #00ff01;
+	-moz-box-shadow: 0 8px 10px -6px #00ff01;
+	box-shadow: 0 8px 10px -6px #00ff01;
+	// border-bottom: 3px solid #00ff01;
 }
 
 // * https://www.behance.net/gallery/138024305/Instagram-UIUX-Research?tracking_source=project_owner_other_projects
 
 // # 2da caratula de album
 
-.caratula-item-total {
+.caratula-izquierda {
 	background-color: $lightBlack;
 	border: 3px solid black;
 	color: white;
@@ -106,92 +40,62 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	// margin-right: -30px;
+
+	.img-container {
+		padding: 3rem 3rem 1.5rem 3rem;
+
+		.img-caratula-album3 {
+			@include bg-image('../../img/albums/horizonAlbum.jpg');
+			width: 50vmin;
+			height: 50vmin;
+			// border-radius: 1.6rem;
+		}
+	}
+
+	.texto-izquierdo {
+		h1 {
+			margin: 0 0 1rem 0;
+			// font-family: Grand Aventure Text;
+		}
+
+		margin-bottom: 2rem;
+	}
 }
 
-.img-container {
-	padding: 3rem 3rem 1.5rem 3rem;
-}
-
-.img-caratula-album3 {
-	@include bg-image('../../img/albums/horizonAlbum.jpg');
-	width: 50vmin;
-	height: 50vmin;
-	// width: 35rem; //#
-	// max-width: 99%; //#
-	border-radius: 1.6rem;
-}
-
-.caratula-item-derecha-n {
-	background-color: #ee82ee;
+.contenedor-playlist {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	position: relative;
+	// border: 5px solid black;
 
-	text-align: center;
-}
+	.b-g-playlist {
+		@include bg-image2('../../img/albums/horizonAlbum.jpg');
 
-.texto-izquierdo {
-	h1 {
-		margin: 0 0 1rem 0;
-	}
+		z-index: 1;
+		filter: blur(3px);
+		-webkit-filter: blur(3px);
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		// margin-left: -20px;
 
-	margin-bottom: 2rem;
-}
-
-.playlist-container {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	gap: 2rem;
-}
-
-.boton {
-	background-color: #fe6d24;
-	border-radius: 1.6rem;
-}
-
-.botonesV {
-	button {
-		border-radius: 1.6rem;
+		// border-radius: 1.6rem;
 	}
 
-	.btn1 {
-		background-color: #cc2c6c;
+	.playlist {
+		color: white;
+		font-weight: bold;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+		position: absolute;
 	}
-	.btn2 {
-		background-color: #cb497d;
-	}
-	.btn3 {
-		background-color: #c56c90;
-	}
-	.btn4 {
-		background-color: #d49ab1;
-	}
-}
-
-.botonesN {
-	button {
-		border-radius: 1.6rem;
-	}
-
-	.btn1 {
-		background-color: #fe6d24;
-	}
-	.btn2 {
-		background-color: #e7895a;
-	}
-	.btn3 {
-		background-color: #faba9b;
-	}
-	.btn4 {
-		background-color: #edc5b1;
-	}
-}
-
-#player {
-	width: 500px;
-	height: 20px;
-	border: 2px solid white;
 }
