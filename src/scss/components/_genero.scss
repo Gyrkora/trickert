@@ -1,52 +1,51 @@
 .generoBg{
-    @include bg-image2('../../img/bgGenero.jpg');
-    
-    .titleG{
-        
-        width: max-content;
-        font-size: 5rem;
-        margin: 25px auto;
-        text-align: center;
-        text-decoration: underline;
+    background-color: rgb(0, 0, 0);
 
-        filter: drop-shadow( 2px 0px 5px $violet);
-        &:hover{
-            filter: drop-shadow( 0px -2px 1px $violet );
-        }
-      
-    }
-    .cardGenero{
-        width: 90%;
-        background-color: rgba(0, 0, 0, 0.15);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: space-around;
-        margin: 20px auto;
-        border-radius: 25px;
-        backdrop-filter: blur(15px);
-        box-shadow: inset 2px 2px 5px white;
-        h3{
-            font-size: 4rem;
-            text-align: center;
-            color: rgb(0, 0, 0);
-            width: auto;
-            margin: auto;
-            
-                filter: drop-shadow(10px 4px 3px rgb(0, 255, 115));
-            
-        }
-
-        p{
-            border-radius: 20px ;
-            padding: 20px;
-            font-size: 1.5rem;
-            margin:25px auto auto;
+    main{
+        .titleG{
             width: 80%;
-            color: rgb(207, 207, 207);
-            background-color: rgba(0, 0, 0, 0.671);
-            backdrop-filter: blur(5px);
-            box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.5);
+            color: white;
+            text-align: center;
+            margin: 50px auto;
+            font-size: 3rem;
+        }
+        .cardGeneroPhonk{
+            @include card-genero;
+            @include bg-image2('../../img/albums/TokioAlbum.jpg');
+            box-shadow:  -2px -2px 5px rgb(255, 0, 157), 2px 2px 10px rgb(255, 0, 170);
+            .difu{
+                @include difuminado(row,space-between);
+                .bgPhonk{
+                    width: 60%;
+                    @include bg-image2('../../img/albums/TokioAlbum.jpg');
+                    border-radius: 40px;
+                    .titleG{
+                        @include title-genero;
+                    }
+                }
+                    .textG{       
+                        @include text-genero;
+                    }
+                }
+            }
+        .cardGeneroTrap{
+            @include card-genero;
+            @include bg-image2('../../img/albums/horizonAlbum.jpg');
+            box-shadow: -2px -2px 5px rgb(255, 123, 0), 2px 2px 15px orangered;
+            .difu{
+                @include difuminado(row,space-between);
+                .bgTrap{
+                    width: 60%;
+                    @include bg-image2('../../img/albums/horizonAlbum.jpg');
+                    border-radius: 40px;
+                    .titleG{
+                        @include title-genero;
+                    }
+                }
+                .textG{
+                    @include text-genero;
+                }
+            }
+        }
         }
     }
-}

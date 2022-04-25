@@ -399,53 +399,98 @@ h4 {
 }
 
 .generoBg {
-  background-image: url("../../img/bgGenero.jpg");
+  background-color: black;
+}
+.generoBg main .titleG {
+  width: 80%;
+  color: white;
+  text-align: center;
+  margin: 50px auto;
+  font-size: 3rem;
+}
+.generoBg main .cardGeneroPhonk {
+  width: 80%;
+  margin: 10px auto 50px;
+  border-radius: 40px;
+  background-image: url("../../img/albums/TokioAlbum.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: -2px -2px 5px #ff009d, 2px 2px 10px #ff00aa;
 }
-.generoBg .titleG {
-  width: max-content;
-  font-size: 5rem;
-  margin: 25px auto;
-  text-align: center;
-  text-decoration: underline;
-  filter: drop-shadow(2px 0px 5px #e300e3);
-}
-.generoBg .titleG:hover {
-  filter: drop-shadow(0px -2px 1px #e300e3);
-}
-.generoBg .cardGenero {
-  width: 90%;
-  background-color: rgba(0, 0, 0, 0.15);
+.generoBg main .cardGeneroPhonk .difu {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: space-around;
-  margin: 20px auto;
-  border-radius: 25px;
-  backdrop-filter: blur(15px);
-  box-shadow: inset 2px 2px 5px white;
+  flex-direction: row;
+  justify-content: space-between;
+  backdrop-filter: blur(8px);
+  border-radius: 40px;
 }
-.generoBg .cardGenero h3 {
-  font-size: 4rem;
+.generoBg main .cardGeneroPhonk .difu .bgPhonk {
+  width: 60%;
+  background-image: url("../../img/albums/TokioAlbum.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 40px;
+}
+.generoBg main .cardGeneroPhonk .difu .bgPhonk .titleG {
+  width: 75%;
+  padding: 10px 25px;
+  margin: 15px auto;
   text-align: center;
-  color: black;
-  width: auto;
-  margin: auto;
-  filter: drop-shadow(10px 4px 3px #00ff73);
+  color: white;
+  font-size: 2rem;
+  backdrop-filter: blur(25px);
+  border-radius: 40px;
 }
-.generoBg .cardGenero p {
-  border-radius: 20px;
-  padding: 20px;
-  font-size: 1.5rem;
-  margin: 25px auto auto;
+.generoBg main .cardGeneroPhonk .difu .textG {
   width: 80%;
-  color: #cfcfcf;
-  background-color: rgba(0, 0, 0, 0.671);
-  backdrop-filter: blur(5px);
-  box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.5);
+  padding: 25px;
+  margin: 70px auto;
+  color: white;
+  font-size: 1rem;
+}
+.generoBg main .cardGeneroTrap {
+  width: 80%;
+  margin: 10px auto 50px;
+  border-radius: 40px;
+  background-image: url("../../img/albums/horizonAlbum.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: -2px -2px 5px #ff7b00, 2px 2px 15px orangered;
+}
+.generoBg main .cardGeneroTrap .difu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  backdrop-filter: blur(8px);
+  border-radius: 40px;
+}
+.generoBg main .cardGeneroTrap .difu .bgTrap {
+  width: 60%;
+  background-image: url("../../img/albums/horizonAlbum.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 40px;
+}
+.generoBg main .cardGeneroTrap .difu .bgTrap .titleG {
+  width: 75%;
+  padding: 10px 25px;
+  margin: 15px auto;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  backdrop-filter: blur(25px);
+  border-radius: 40px;
+}
+.generoBg main .cardGeneroTrap .difu .textG {
+  width: 80%;
+  padding: 25px;
+  margin: 70px auto;
+  color: white;
+  font-size: 1rem;
 }
 
 /* navbar */
