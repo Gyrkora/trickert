@@ -1,0 +1,17 @@
+/* Lg - min 1200 */
+
+//# Album Section
+
+@media (min-width: 1200px) {
+	.caratula-innerContainer {
+		display: grid;
+		grid-template-columns: 40% 60%;
+	}
+}
+
+@media (min-width: $large) {
+	.img-container-single {
+		display: flex;
+		flex-direction: row;
+	}
+}

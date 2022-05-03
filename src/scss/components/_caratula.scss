@@ -15,24 +15,23 @@
 .caratula-innerContainer {
 	display: grid;
 	grid-template-columns: 40% 60%;
+
 	width: 100rem;
-	max-width: 95%;
+	max-width: 99%;
 	border-radius: 2rem;
 	-webkit-box-shadow: 0 8px 10px -6px #00ff01;
 	-moz-box-shadow: 0 8px 10px -6px #00ff01;
 	box-shadow: 0 8px 10px -6px #00ff01;
-	// border-bottom: 3px solid #00ff01;
 }
 
 // * https://www.behance.net/gallery/138024305/Instagram-UIUX-Research?tracking_source=project_owner_other_projects
-
-// # 2da caratula de album
 
 .caratula-izquierda {
 	background-color: $lightBlack;
 	border: 3px solid black;
 	color: white;
-	max-width: 40rem;
+	max-width: 99%;
+	width: 40rem;
 	// width: 40rem; //#
 
 	display: flex;
@@ -40,23 +39,24 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	// margin-right: -30px;
 
 	.img-container {
 		padding: 3rem 3rem 1.5rem 3rem;
+		max-width: 99%;
 
 		.img-caratula-album3 {
 			@include bg-image('../../img/albums/horizonAlbum.jpg');
-			width: 50vmin;
-			height: 50vmin;
-			// border-radius: 1.6rem;
+			width: 40vmin;
+			height: 40vmin;
+			max-height: 85%;
+			max-width: 85%;
+			margin: 0 auto;
 		}
 	}
 
 	.texto-izquierdo {
 		h1 {
 			margin: 0 0 1rem 0;
-			// font-family: Grand Aventure Text;
 		}
 
 		margin-bottom: 2rem;
@@ -69,7 +69,6 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	// border: 5px solid black;
 
 	.b-g-playlist {
 		@include bg-image2('../../img/albums/horizonAlbum.jpg');
@@ -80,9 +79,6 @@
 		height: 100%;
 		width: 100%;
 		text-align: center;
-		// margin-left: -20px;
-
-		// border-radius: 1.6rem;
 	}
 
 	.playlist {
@@ -96,6 +92,49 @@
 		width: 80%;
 		padding: 20px;
 		text-align: center;
-		position: absolute;
 	}
+}
+
+// # SINGLE
+
+.caratula-innerContainer-single {
+	width: 100rem;
+	max-width: 99%;
+	border-radius: 2rem;
+	-webkit-box-shadow: 0 8px 10px -6px #00ff01;
+	-moz-box-shadow: 0 8px 10px -6px #00ff01;
+	box-shadow: 0 8px 10px -6px #00ff01;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
+
+.caratula-single {
+	background-color: $lightBlack;
+	border: 3px solid black;
+	color: white;
+	max-width: 99%;
+	width: 100rem;
+	// width: 40rem; //#
+	border-radius: 2rem;
+
+	.texto-izquierdo {
+		h1 {
+			margin: 0 0 1rem 0;
+		}
+
+		margin-bottom: 2rem;
+	}
+}
+
+.img-container-single {
+	padding: 3rem 3rem 1.5rem 3rem;
+	max-width: 99%;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	// flex-wrap: wrap;
+	display: flex;
 }

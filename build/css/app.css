@@ -295,7 +295,7 @@ h4 {
   display: grid;
   grid-template-columns: 40% 60%;
   width: 100rem;
-  max-width: 95%;
+  max-width: 99%;
   border-radius: 2rem;
   -webkit-box-shadow: 0 8px 10px -6px #00ff01;
   -moz-box-shadow: 0 8px 10px -6px #00ff01;
@@ -306,7 +306,8 @@ h4 {
   background-color: #0b0f1a;
   border: 3px solid black;
   color: white;
-  max-width: 40rem;
+  max-width: 99%;
+  width: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -315,14 +316,18 @@ h4 {
 }
 .caratula-izquierda .img-container {
   padding: 3rem 3rem 1.5rem 3rem;
+  max-width: 99%;
 }
 .caratula-izquierda .img-container .img-caratula-album3 {
   background-image: url("../../img/albums/horizonAlbum.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  width: 50vmin;
-  height: 50vmin;
+  width: 40vmin;
+  height: 40vmin;
+  max-height: 85%;
+  max-width: 85%;
+  margin: 0 auto;
 }
 .caratula-izquierda .texto-izquierdo {
   margin-bottom: 2rem;
@@ -361,10 +366,60 @@ h4 {
   width: 80%;
   padding: 20px;
   text-align: center;
-  position: absolute;
+}
+
+.caratula-innerContainer-single {
+  width: 100rem;
+  max-width: 99%;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 8px 10px -6px #00ff01;
+  -moz-box-shadow: 0 8px 10px -6px #00ff01;
+  box-shadow: 0 8px 10px -6px #00ff01;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.caratula-single {
+  background-color: #0b0f1a;
+  border: 3px solid black;
+  color: white;
+  max-width: 99%;
+  width: 100rem;
+  border-radius: 2rem;
+}
+.caratula-single .texto-izquierdo {
+  margin-bottom: 2rem;
+}
+.caratula-single .texto-izquierdo h1 {
+  margin: 0 0 1rem 0;
+}
+
+.img-container-single {
+  padding: 3rem 3rem 1.5rem 3rem;
+  max-width: 99%;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  display: flex;
 }
 
 /* navbar */
 /* hero */
+/* Lg - min 1200 */
+@media (min-width: 1200px) {
+  .caratula-innerContainer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+}
+@media (min-width: 1080px) {
+  .img-container-single {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
