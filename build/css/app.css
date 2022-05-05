@@ -139,9 +139,15 @@ body {
 
 p,
 h1,
+h2,
 h3,
 h4 {
   font-family: "Lato", sans-serif;
+  color: white;
+}
+
+h2 {
+  font-size: 5rem;
 }
 
 .container {
@@ -165,6 +171,10 @@ h4 {
 
 .in-bold {
   font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .m-0 {
@@ -412,7 +422,7 @@ h4 {
 }
 
 .albumBg {
-  background-image: url("../../img/bg1.jpg");
+  background-image: url("../../img/bgsvg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -429,22 +439,21 @@ h4 {
 }
 
 .caratula-innerContainer {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  width: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80rem;
   max-width: 99%;
-  border-radius: 2rem;
-  -webkit-box-shadow: 0 8px 10px -6px #00ff01;
-  -moz-box-shadow: 0 8px 10px -6px #00ff01;
-  box-shadow: 0 8px 10px -6px #00ff01;
 }
 
 .caratula-izquierda {
-  background-color: #0b0f1a;
+  background-color: #111010;
   border: 3px solid black;
   color: white;
   max-width: 99%;
   width: 40rem;
+  border-radius: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -455,7 +464,7 @@ h4 {
   padding: 3rem 3rem 1.5rem 3rem;
   max-width: 99%;
 }
-.caratula-izquierda .img-container .img-caratula-album3 {
+.caratula-izquierda .img-container .img-caratula-album1, .caratula-izquierda .img-container .img-caratula-album2 {
   background-image: url("../../img/albums/horizonAlbum.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -465,6 +474,12 @@ h4 {
   max-height: 85%;
   max-width: 85%;
   margin: 0 auto;
+}
+.caratula-izquierda .img-container .img-caratula-album2 {
+  background-image: url("../../img/albums/TokioAlbum.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .caratula-izquierda .texto-izquierdo {
   margin-bottom: 2rem;
@@ -480,17 +495,23 @@ h4 {
   justify-content: center;
   position: relative;
 }
-.contenedor-playlist .b-g-playlist {
+.contenedor-playlist .b-g-playlist1, .contenedor-playlist .b-g-playlist2 {
   background-image: url("../../img/albums/horizonAlbum.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  z-index: 1;
   filter: blur(3px);
   -webkit-filter: blur(3px);
   height: 100%;
   width: 100%;
   text-align: center;
+  border-radius: 0 2rem 2rem 0;
+}
+.contenedor-playlist .b-g-playlist2 {
+  background-image: url("../../img/albums/TokioAlbum.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .contenedor-playlist .playlist {
   color: white;
@@ -509,9 +530,6 @@ h4 {
   width: 100rem;
   max-width: 99%;
   border-radius: 2rem;
-  -webkit-box-shadow: 0 8px 10px -6px #00ff01;
-  -moz-box-shadow: 0 8px 10px -6px #00ff01;
-  box-shadow: 0 8px 10px -6px #00ff01;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -551,16 +569,24 @@ h4 {
 /* navbar */
 /* hero */
 /* Lg - min 1200 */
-@media (min-width: 1200px) {
-  .caratula-innerContainer {
-    display: grid;
-    grid-template-columns: 40% 60%;
-  }
-}
 @media (min-width: 1080px) {
   .img-container-single {
     display: flex;
     flex-direction: row;
+  }
+
+  .caratula-innerContainer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: stretch;
+  }
+
+  .caratula-izquierda {
+    border-radius: 2rem 0 0 2rem;
+  }
+
+  .album-responsive {
+    display: none;
   }
 }
 

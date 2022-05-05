@@ -1,5 +1,5 @@
 .albumBg {
-	@include bg-image2('../../img/bg1.jpg');
+	@include bg-image2('../../img/bgsvg.svg');
 	backdrop-filter: blur(5px);
 }
 
@@ -13,26 +13,24 @@
 }
 
 .caratula-innerContainer {
-	display: grid;
-	grid-template-columns: 40% 60%;
+	display: flex;
+	align-items: center;
 
-	width: 100rem;
+	justify-content: center;
+
+	width: 80rem;
 	max-width: 99%;
-	border-radius: 2rem;
-	-webkit-box-shadow: 0 8px 10px -6px #00ff01;
-	-moz-box-shadow: 0 8px 10px -6px #00ff01;
-	box-shadow: 0 8px 10px -6px #00ff01;
+	// border-radius: 2rem;
 }
 
-// * https://www.behance.net/gallery/138024305/Instagram-UIUX-Research?tracking_source=project_owner_other_projects
-
 .caratula-izquierda {
-	background-color: $lightBlack;
+	background-color: $darkBlack;
 	border: 3px solid black;
 	color: white;
 	max-width: 99%;
 	width: 40rem;
-	// width: 40rem; //#
+	border-radius: 2rem;
+	padding-bottom: 2rem;
 
 	display: flex;
 	flex-direction: column;
@@ -44,13 +42,18 @@
 		padding: 3rem 3rem 1.5rem 3rem;
 		max-width: 99%;
 
-		.img-caratula-album3 {
+		.img-caratula-album1 {
 			@include bg-image('../../img/albums/horizonAlbum.jpg');
 			width: 40vmin;
 			height: 40vmin;
 			max-height: 85%;
 			max-width: 85%;
 			margin: 0 auto;
+		}
+
+		.img-caratula-album2 {
+			@extend .img-caratula-album1;
+			@include bg-image('../../img/albums/TokioAlbum.jpg');
 		}
 	}
 
@@ -70,15 +73,19 @@
 	justify-content: center;
 	position: relative;
 
-	.b-g-playlist {
+	.b-g-playlist1 {
 		@include bg-image2('../../img/albums/horizonAlbum.jpg');
-
-		z-index: 1;
+		// z-index: 0;
 		filter: blur(3px);
 		-webkit-filter: blur(3px);
 		height: 100%;
 		width: 100%;
 		text-align: center;
+		border-radius: 0 2rem 2rem 0;
+	}
+	.b-g-playlist2 {
+		@extend .b-g-playlist1;
+		@include bg-image2('../../img/albums/TokioAlbum.jpg');
 	}
 
 	.playlist {
@@ -95,15 +102,14 @@
 	}
 }
 
+// * https://www.behance.net/gallery/138024305/Instagram-UIUX-Research?tracking_source=project_owner_other_projects
+
 // # SINGLE
 
 .caratula-innerContainer-single {
 	width: 100rem;
 	max-width: 99%;
 	border-radius: 2rem;
-	-webkit-box-shadow: 0 8px 10px -6px #00ff01;
-	-moz-box-shadow: 0 8px 10px -6px #00ff01;
-	box-shadow: 0 8px 10px -6px #00ff01;
 	display: flex;
 	align-items: center;
 	flex-direction: row;
