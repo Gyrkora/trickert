@@ -134,7 +134,13 @@
 	max-width: 99%;
 	align-items: center;
 	justify-content: space-around;
+
 	flex-direction: column;
 	// flex-wrap: wrap;
 	display: flex;
+}
+
+.caratula-single-item {
+	width: 90%;
+	margin: 0 auto;
 }

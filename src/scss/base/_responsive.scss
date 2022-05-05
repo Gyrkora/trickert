@@ -2,7 +2,7 @@
 
 //# Album Section
 
-@media (min-width: 1200px) {
+@media (min-width: $xl) {
 	.caratula-innerContainer {
 		display: grid;
 		grid-template-columns: 40% 60%;
