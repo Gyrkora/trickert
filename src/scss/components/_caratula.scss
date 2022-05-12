@@ -15,12 +15,9 @@
 .caratula-innerContainer {
 	display: flex;
 	align-items: center;
-
 	justify-content: center;
-
 	width: 80rem;
 	max-width: 99%;
-	// border-radius: 2rem;
 }
 
 .caratula-izquierda {
@@ -75,7 +72,6 @@
 
 	.b-g-playlist1 {
 		@include bg-image2('../../img/albums/horizonAlbum.jpg');
-		// z-index: 0;
 		filter: blur(3px);
 		-webkit-filter: blur(3px);
 		height: 100%;
@@ -123,7 +119,6 @@
 	color: white;
 	max-width: 99%;
 	width: 100rem;
-	// width: 40rem; //#
 	border-radius: 2rem;
 
 	.texto-izquierdo {

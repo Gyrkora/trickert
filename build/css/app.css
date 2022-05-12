@@ -150,6 +150,10 @@ h2 {
   font-size: 5rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -568,6 +572,56 @@ h2 {
 
 /* navbar */
 /* hero */
+.hero-imgContainer {
+  background-image: url("../../img/bgHero.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardHero {
+  background: url("../../img/bg-card-D.jpg") repeat-x;
+  border: 5px solid white;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0 2rem;
+  border-radius: 2rem;
+  height: 60rem;
+  max-height: 85%;
+  width: 80rem;
+}
+.cardHero .bg-cardHero-I {
+  background-image: url("../../img/profilePic1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-width: 99%;
+  border-radius: 2rem;
+}
+
+.bg-cardHero-D {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+.bg-cardHero-D h2 {
+  margin: 0;
+}
+.bg-cardHero-D div {
+  margin: 1rem 0 1rem 4rem;
+}
+.bg-cardHero-D div a {
+  padding: 0.5rem;
+}
+.bg-cardHero-D div a img {
+  width: 1.7rem;
+}
+
 /* Lg - min 1200 */
 @media (min-width: 1080px) {
   .img-container-single {
