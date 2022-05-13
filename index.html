@@ -1,18 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="build/css/app.css" />
-    <link rel="stylesheet" href="build/css/normalize.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Este es el inicio</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="build/css/app.css" />
+		<link rel="stylesheet" href="build/css/normalize.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Inicio</title>
+	</head>
+	<body>
+		<div class="bg-Index">
+			<h3 class="m-0">Este es el inicio</h3>
 
-    <a href="pages/albumes.html"><h3>link a caratulas</h3></a>
-    <a href="pages/genero.html"><h3>link a Genero</h3></a>
+			<a href="pages/albumes.html"><h3>link a Albumes</h3></a>
 
-  </body>
+			<div class="hero-imgContainer">
+				<div class="cardHero">
+					<div class="bg-cardHero-I"></div>
+
+					<div class="bg-cardHero-D">
+						<div>
+							<h2>Trickert</h2>
+						</div>
+
+						<div>
+							<a href="">
+								<img src="img/icons/spotify.svg" alt="escuchar en spotify" />
+							</a>
+							<a href="">
+								<img src="img/icons/play.svg" alt="escucha en deezer" />
+							</a>
+							<a href="">
+								<img src="img/icons/youtube.svg" alt="escucha en youtube" />
+							</a>
+							<a href="">
+								<img src="img/icons/itunes.svg" alt="escucha en itunes" />
+							</a>
+							<a href="">
+								<img src="img/icons/instagram.svg" alt="búscame en instagram" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- acerca de -->
+
+			<div class="acercaDe">
+				<h1>¿Quién soy?</h1>
+
+				<div>
+					<p>
+						Soy Trickert, hago Phonk, Trap y Lofi, entre otros géneros, desde el
+						2018. Mi álbum Tokyo Drifting, se hizo popular en 2020 con 11
+						canciones de género phonk, principalmente. Es un álbum en el que me
+						inspiré en lo que eran los autos japoneses y los que hacen drifting,
+						tal como su nombre lo indica. Tengo otro álbum, Horizon, lanzado en
+						el 2021. Con 9 canciones de géneros diferentes como House y
+						subgéneros como Lofi House. También produje singles como: One
+						(Trap), Atmospheric (Soundtrack), Over Time (Soundtrack) y Space
+						Racer y Lost In The Space, en los cuales incursiono en géneros como
+						Synthwave y Retrowave. O Final Boss, en el que me inspiré en la
+						Época Medieval.
+					</p>
+				</div>
+			</div>
+			<!-- acerca de -->
+
+			<!-- carrusel -->
+
+			<div class="cInicio-Container">
+				<div class="glide color-white">
+					<div class="glide__track" data-glide-el="track">
+						<ul class="glide__slides">
+							<li class="glide__slide">
+								<div class="cInicio-Card">
+									<div class="cInicio-1"></div>
+									<div>
+										<h1>You</h1>
+										<h4>Single</h4>
+									</div>
+								</div>
+							</li>
+							<li class="glide__slide">1</li>
+							<li class="glide__slide">2</li>
+						</ul>
+					</div>
+
+					<div class="glide__bullets" data-glide-el="controls[nav]">
+						<button class="glide__bullet" data-glide-dir="=0"></button>
+						<button class="glide__bullet" data-glide-dir="=1"></button>
+						<button class="glide__bullet" data-glide-dir="=2"></button>
+					</div>
+				</div>
+			</div>
+
+			<!-- carrusel -->
+
+			<h3>footer</h3>
+		</div>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init()
+		</script>
+		<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+		<script src="js/glideConfig.js"></script>
+	</body>
 </html>

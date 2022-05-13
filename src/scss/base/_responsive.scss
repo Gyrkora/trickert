@@ -1,0 +1,30 @@
+/* Lg - min 1200 */
+
+//# Album Section
+
+@media (min-width: $medium) {
+}
+
+@media (min-width: $xl) {
+}
+
+@media (min-width: $large) {
+	.img-container-single {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.caratula-innerContainer {
+		display: grid;
+		grid-template-columns: 40% 60%;
+		align-items: stretch;
+	}
+
+	.caratula-izquierda {
+		border-radius: 2rem 0 0 2rem;
+	}
+
+	.album-responsive {
+		display: none;
+	}
+}

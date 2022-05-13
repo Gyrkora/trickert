@@ -1,0 +1,46 @@
+.bg-Index {
+	background-color: black;
+}
+
+.acercaDe {
+	text-align: center;
+	border-radius: 2rem;
+	// margin: 0 1rem -15px 1rem;
+	margin: 0 auto;
+	background-color: #4242425e;
+	padding: 2rem 0;
+
+	h3 {
+		margin: 0 0 3rem 0;
+	}
+
+	div {
+		max-width: 70%;
+		margin: 0 auto;
+		line-height: 1.5;
+	}
+}
+
+/* carrusel */
+
+.cInicio-Container {
+	margin: 5rem auto;
+	max-width: 95%;
+}
+
+.cInicio-Card {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+
+	div {
+		margin: 0 auto;
+	}
+}
+
+.cInicio-1 {
+	@include bg-image2('../../img/albums/TokioAlbum.jpg');
+	height: 300px;
+	max-width: 80%;
+	// margin: 0 auto;
+}
