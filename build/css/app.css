@@ -573,7 +573,7 @@ a {
 /* navbar */
 /* hero */
 .hero-imgContainer {
-  background-image: url("../../img/bgHero.svg");
+  background-image: url("../../img/bgHero-2.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -620,6 +620,25 @@ a {
 }
 .bg-cardHero-D div a img {
   width: 1.7rem;
+}
+
+.bg-Index {
+  background-color: black;
+}
+
+.acercaDe {
+  text-align: center;
+  border-radius: 2rem;
+  margin: 0 1rem -15px 1rem;
+  background-color: #4242425e;
+  padding: 2rem 0;
+}
+.acercaDe h2 {
+  margin: 0 0 3rem 0;
+}
+.acercaDe div {
+  max-width: 75%;
+  margin: 0 auto;
 }
 
 /* Lg - min 1200 */

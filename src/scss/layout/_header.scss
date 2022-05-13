@@ -3,7 +3,7 @@
 /* hero */
 
 .hero-imgContainer {
-	@include bg-image2('../../img/bgHero.svg');
+	@include bg-image2('../../img/bgHero-2.svg');
 	height: 40rem;
 	display: flex;
 	align-items: center;
@@ -51,21 +51,3 @@
 		}
 	}
 }
-
-// // .bg-cardHero-D {
-// // 	position: relative;
-// // 	border-radius: 2rem;
-// // }
-
-// .contenido-hero {
-// 	// color: white;
-// 	// font-weight: bold;
-// 	// position: absolute;
-// 	// top: 50%;
-// 	// left: 50%;
-// 	// transform: translate(-50%, -50%);
-// 	// z-index: 2;
-// 	// width: 80%;
-// 	// padding: 20px;
-// 	// text-align: center;
-// }
