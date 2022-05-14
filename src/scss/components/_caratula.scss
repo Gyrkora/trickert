@@ -1,126 +1,146 @@
 .albumBg {
-	@include bg-image2('../../img/bg1.jpg');
+	@include bg-image2('../../img/bgsvg.svg');
 	backdrop-filter: blur(5px);
 }
 
 .caratula-container {
 	padding: 2rem 0;
 	margin: 3rem auto;
-	// box-shadow: 3px 0px 10px 1px #000 inset;
-}
-
-.caratula-innerContainer {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	max-width: 95%;
-	border-radius: 1.6rem;
-	// box-shadow: 0px 4px 10px -0px #9f1fb6;
-	box-shadow: 0px 4px 15px -4px #9f1fb6;
-}
-
-.caratula-item {
-	padding: 2rem 0;
-	border-radius: 1.6rem;
-	padding: 1rem;
-}
-.caratula-item-izquierda {
-	background-color: $lightBlack;
-	border: 3px solid black;
-	height: 30rem;
-	color: white;
-
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-
-	.caratula-item-layout {
-		display: grid;
-		grid-template-columns: 55% 45%;
-		justify-content: flex-start;
-		align-items: center;
-		padding-bottom: 10rem;
-
-		.img-caratulaContainer {
-			position: relative;
-
-			.img-caratula-album1 {
-				@include bg-image('../../img/albums/tokioAlbum.jpg');
-				height: 250px;
-				width: 250px;
-				top: -50px;
-				right: -2px;
-				left: 30px;
-				position: absolute;
-			}
-
-			.img-caratula-album2 {
-				@extend .img-caratula-album1;
-				@include bg-image('../../img/albums/horizonAlbum.jpg');
-			}
-		}
-
-		.titulo-imgContainer {
-			display: flex;
-			flex-direction: column;
-			justify-content: left;
-			align-items: flex-start;
-		}
+	h2 {
+		font-family: $titulofont;
+		font-size: 2rem;
 	}
 }
 
-.caratula-item-derecha {
-	background-color: violet;
-	border-bottom: 3px solid #9f1fb6;
-	margin-left: -20px;
+.caratula-innerContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80rem;
+	max-width: 99%;
+}
+
+.caratula-izquierda {
+	background-color: $darkBlack;
+	border: 3px solid black;
+	color: white;
+	max-width: 99%;
+	width: 40rem;
+	border-radius: 2rem;
+	padding-bottom: 2rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	.img-container {
+		padding: 3rem 3rem 1.5rem 3rem;
+		max-width: 99%;
+
+		.img-caratula-album1 {
+			@include bg-image('../../img/albums/horizonAlbum.jpg');
+			width: 40vmin;
+			height: 40vmin;
+			max-height: 85%;
+			max-width: 85%;
+			margin: 0 auto;
+		}
+
+		.img-caratula-album2 {
+			@extend .img-caratula-album1;
+			@include bg-image('../../img/albums/TokioAlbum.jpg');
+		}
+	}
+
+	.texto-izquierdo {
+		h1 {
+			margin: 0 0 1rem 0;
+		}
+
+		margin-bottom: 2rem;
+	}
+}
+
+.contenedor-playlist {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	text-align: center;
+	position: relative;
+
+	.b-g-playlist1 {
+		@include bg-image2('../../img/albums/horizonAlbum.jpg');
+		filter: blur(3px);
+		-webkit-filter: blur(3px);
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		border-radius: 0 2rem 2rem 0;
+	}
+	.b-g-playlist2 {
+		@extend .b-g-playlist1;
+		@include bg-image2('../../img/albums/TokioAlbum.jpg');
+	}
+
+	.playlist {
+		color: white;
+		font-weight: bold;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+		width: 80%;
+		padding: 20px;
+		text-align: center;
+	}
 }
 
 // * https://www.behance.net/gallery/138024305/Instagram-UIUX-Research?tracking_source=project_owner_other_projects
 
-// # 2da caratula de album
+// # SINGLE
 
-.caratula-item-izquierda-n {
+.caratula-innerContainer-single {
+	width: 100rem;
+	max-width: 99%;
+	border-radius: 2rem;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
+
+.caratula-single {
 	background-color: $lightBlack;
 	border: 3px solid black;
 	color: white;
+	max-width: 99%;
+	width: 100rem;
+	border-radius: 2rem;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
+	.texto-izquierdo {
+		h1 {
+			margin: 0 0 1rem 0;
+		}
 
-.img-container {
-	padding: 3rem 3rem 1.5rem 3rem;
-	max-width: 50rem;
-}
-
-.img-caratula-album3 {
-	@include bg-image('../../img/albums/horizonAlbum.jpg');
-	width: 50vmin;
-	height: 50vmin;
-	border-radius: 1.6rem;
-}
-
-.caratula-item-derecha-n {
-	background-color: violet;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-
-	text-align: center;
-}
-
-.texto-izquierdo {
-	h1 {
-		margin: 0;
+		margin-bottom: 2rem;
 	}
+}
 
-	margin-bottom: 2rem;
+.img-container-single {
+	padding: 3rem 3rem 1.5rem 3rem;
+	max-width: 99%;
+	align-items: center;
+	justify-content: space-around;
+
+	flex-direction: column;
+	display: flex;
+}
+
+.caratula-single-item {
+	width: 90%;
+	margin: 0 auto;
 }

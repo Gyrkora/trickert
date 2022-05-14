@@ -1,0 +1,110 @@
+.bg-Index {
+	background-color: black;
+}
+
+.acercaDe {
+	text-align: center;
+	border-radius: 2rem;
+	// margin: 0 1rem -15px 1rem;
+	margin: 0 auto;
+	background-color: #4242425e;
+	padding: 2rem 0;
+
+	h3 {
+		margin: 0 0 3rem 0;
+	}
+
+	div {
+		max-width: 70%;
+		margin: 0 auto;
+		line-height: 1.5;
+	}
+}
+
+/* carrusel */
+
+.cInicio-Container {
+	margin: 5rem auto;
+	max-width: 95%;
+}
+
+.cInicio-Card-inner {
+	background-color: #1a1818;
+	max-width: 70%;
+	border-radius: 2rem;
+	// height: 40rem;
+}
+
+.cInicio-Card {
+	width: 95%;
+	margin: 0 auto;
+	text-align: center;
+	// height: 40rem;
+
+	div {
+		margin: 0 auto;
+	}
+}
+
+.caratula1 {
+	@include bg-image2('../../img/albums/TokioAlbum.jpg');
+	height: 300px;
+	max-width: 90%;
+	margin: 0;
+	max-width: 100%;
+	border-radius: 2rem;
+	position: relative;
+	height: 25rem;
+
+	.cInicio-boton {
+		position: absolute;
+		border-radius: 1rem;
+		top: 81%;
+		padding: 1rem 0;
+		width: 30rem;
+		max-width: 100%;
+		background-color: rgba(72, 70, 70, 0.171);
+		-webkit-backdrop-filter: blur(2em);
+		backdrop-filter: blur(2em);
+	}
+}
+
+.cInicio-abajo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 0;
+
+	button {
+		margin: 1rem auto;
+		padding: 0.5rem 0;
+		width: 15rem;
+		border-radius: 2rem;
+		background-color: #393737;
+		color: white;
+		position: relative;
+		cursor: pointer;
+		border: none;
+
+		img {
+			width: 1.5rem;
+			position: absolute;
+			left: 8px;
+			top: 12%;
+		}
+	}
+}
+
+.caratula2 {
+	@extend .caratula1;
+	@include bg-image2('../../img/albums/horizonAlbum.jpg');
+}
+.caratula3 {
+	@extend .caratula1;
+	@include bg-image2('../../img/singles/dreams.jpg');
+}
+.caratula4 {
+	@extend .caratula1;
+	@include bg-image2('../../img/singles/spaceRacer.jpg');
+}

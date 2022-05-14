@@ -1,3 +1,7 @@
+// // # Libreria Glidejs
+@import '../../node_modules/@glidejs/glide/src/assets/sass/glide.core';
+@import '../../node_modules/@glidejs/glide/src/assets/sass/glide.theme';
+
 // # Abstract
 
 @import 'abstract/extends';
@@ -19,6 +23,7 @@
 // #-layouts
 @import 'layout/footer';
 @import 'layout/header';
+@import 'layout/inicio';
 
 // # Responsive
 @import 'base/responsive';
