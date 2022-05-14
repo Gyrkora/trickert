@@ -426,7 +426,7 @@ a {
 }
 
 .albumBg {
-  background-image: url("../../img/bgsvg.svg");
+  background-image: url("../../img/bgAlbumes.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -665,6 +665,42 @@ a {
   font-size: 1rem;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-image: url("../../img/bgAlbumes.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+}
+footer img {
+  width: 2rem;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.logo-footer img {
+  width: 5rem;
+}
+
+.social-footer {
+  padding-bottom: 1rem;
+}
+.social-footer img {
+  margin: 0 1rem;
+}
+.social-footer h4 {
+  margin: 2rem 0;
+}
+
 /* navbar */
 /* hero */
 .hero-imgContainer {
@@ -830,6 +866,19 @@ a {
 }
 
 /* Lg - min 1200 */
+@media (min-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .logo-footer {
+    background-color: rgba(72, 70, 70, 0.1);
+    -webkit-backdrop-filter: blur(1em);
+    backdrop-filter: blur(1em);
+  }
+}
 @media (min-width: 1080px) {
   .img-container-single {
     display: flex;
