@@ -8,53 +8,42 @@
 }
 
 @mixin bg-image2($url) {
-<<<<<<< HEAD
-  background: {
-    image: url($url);
-    repeat: no-repeat;
-    size: cover;
-    position: center center;
-    
-  }
-=======
 	background: {
 		image: url($url);
 		repeat: no-repeat;
 		size: cover;
 		position: center center;
 	}
->>>>>>> a7c6156c8cb134f8c85935aa7d6d0922d7ffa598
 }
 
-@mixin card-genero{
-  width: 80%; 
-  margin: 10px auto 50px;
-  
-  border-radius: 40px;
+@mixin card-genero {
+	width: 80%;
+	margin: 10px auto 50px;
+
+	border-radius: 40px;
 }
-@mixin difuminado($flex-deirection,$justify-content){
-  display:flex;
-  flex-direction: $flex-deirection;
-  justify-content: $justify-content;
-  backdrop-filter:blur(8px);
-  border-radius: 40px;
+@mixin difuminado($flex-deirection, $justify-content) {
+	display: flex;
+	flex-direction: $flex-deirection;
+	justify-content: $justify-content;
+	backdrop-filter: blur(8px);
+	border-radius: 40px;
 }
-@mixin title-genero{
-  width: 75%;
-  padding: 10px 25px;
-  margin: 15px auto;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 2rem;
-  backdrop-filter: blur(25px);
-  border-radius: 40px;
+@mixin title-genero {
+	width: 75%;
+	padding: 10px 25px;
+	margin: 15px auto;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 2rem;
+	backdrop-filter: blur(25px);
+	border-radius: 40px;
 }
 
 @mixin text-genero {
-  width: 80%;
-  padding: 25px;
-  margin:70px auto;
-  color:rgb(255, 255, 255);
-  font-size:1rem;
+	width: 80%;
+	padding: 25px;
+	margin: 70px auto;
+	color: rgb(255, 255, 255);
+	font-size: 1rem;
 }
-
