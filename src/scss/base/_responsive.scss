@@ -3,6 +3,18 @@
 //# Album Section
 
 @media (min-width: $medium) {
+	footer {
+		display: grid;
+		grid-template-columns: 20% 80%;
+		align-items: center;
+		justify-content: space-between;
+
+		.logo-footer {
+			background-color: rgba(72, 70, 70, 0.1);
+			-webkit-backdrop-filter: blur(1em);
+			backdrop-filter: blur(1em);
+		}
+	}
 }
 
 @media (min-width: $xl) {
