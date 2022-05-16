@@ -1,0 +1,4 @@
+.contactBg{
+    @include bg-image2('../../img/bgsvg.svg');
+    backdrop-filter: blur(5px);
+}
