@@ -8,22 +8,12 @@
 }
 
 @mixin bg-image2($url) {
-<<<<<<< HEAD
-  background: {
-    image: url($url);
-    repeat: no-repeat;
-    size: cover;
-    position: center center;
-    
-  }
-=======
 	background: {
 		image: url($url);
 		repeat: no-repeat;
 		size: cover;
 		position: center center;
 	}
->>>>>>> main
 }
 
 @mixin card-genero {
