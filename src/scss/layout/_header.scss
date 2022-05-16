@@ -3,15 +3,22 @@
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	background: rgba(39, 39, 39, 0.61); 
+	justify-content: space-evenly;
+	background: rgba(0, 0, 0, 0.877); 
 	// Logo
-	.logo{
-	width: 120px;
+	.contLogo{
+		width: 10%;
+		
+		.logo{
+			width: 120px;
+			
+		}
 
 	}
 	.menu{
 		
+		width: 70%;
+		text-align: end;
 		margin: 10px;
 		a{
 			font-size: 1.5rem;

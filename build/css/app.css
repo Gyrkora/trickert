@@ -438,7 +438,10 @@ a {
 }
 
 .generoBg {
-  background-color: black;
+  background-image: url("../../img/bgHero-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .generoBg main .titleG {
   width: 80%;
@@ -446,6 +449,7 @@ a {
   text-align: center;
   margin: 50px auto;
   font-size: 3rem;
+  font-family: "Fjalla One", sans-serif;
 }
 .generoBg main .cardGeneroPhonk {
   width: 80%;
@@ -480,6 +484,7 @@ a {
   font-size: 2rem;
   backdrop-filter: blur(25px);
   border-radius: 40px;
+  font-family: "Fjalla One", sans-serif;
 }
 .generoBg main .cardGeneroPhonk .difu .textG {
   width: 80%;
@@ -487,6 +492,7 @@ a {
   margin: 70px auto;
   color: white;
   font-size: 1rem;
+  font-family: "Lato", sans-serif;
 }
 .generoBg main .cardGeneroTrap {
   width: 80%;
@@ -521,6 +527,7 @@ a {
   font-size: 2rem;
   backdrop-filter: blur(25px);
   border-radius: 40px;
+  font-family: "Fjalla One", sans-serif;
 }
 .generoBg main .cardGeneroTrap .difu .textG {
   width: 80%;
@@ -528,6 +535,7 @@ a {
   margin: 70px auto;
   color: white;
   font-size: 1rem;
+  font-family: "Lato", sans-serif;
 }
 
 footer {
@@ -571,13 +579,18 @@ footer img {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background: rgba(39, 39, 39, 0.61);
+  justify-content: space-evenly;
+  background: rgba(0, 0, 0, 0.877);
 }
-.contHeader .logo {
+.contHeader .contLogo {
+  width: 10%;
+}
+.contHeader .contLogo .logo {
   width: 120px;
 }
 .contHeader .menu {
+  width: 70%;
+  text-align: end;
   margin: 10px;
 }
 .contHeader .menu a {
@@ -756,7 +769,7 @@ footer img {
 }
 
 .contactBg {
-  background-image: url("../../img/bgsvg.svg");
+  background-image: url("../../img/bgHero-2.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

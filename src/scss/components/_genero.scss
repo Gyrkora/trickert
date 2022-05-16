@@ -1,5 +1,5 @@
 .generoBg{
-    background-color: rgb(0, 0, 0);
+    @include bg-image2('../../img/bgHero-2.svg');
 
     main{
         .titleG{
@@ -8,6 +8,7 @@
             text-align: center;
             margin: 50px auto;
             font-size: 3rem;
+            font-family: $titulofont;
         }
         .cardGeneroPhonk{
             @include card-genero;
