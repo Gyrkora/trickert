@@ -10,8 +10,24 @@
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 	</head>
 	<body class="albumBg">
+		<header class="contHeader">
+            <div class="contLogo"><a href="../index.html"><img class="logo" src="../img/logo/Logo Trickert (Verde Fluor).svg" alt="Trickert"></a></div>
+            <nav id="nav" class="menu">
+                <div class="menuLinks">    
+                    <a class="link" href="../index.html">Inicio</a>
+                    <a class="link" href="./genero.html">Mi Trabajo</a>
+                    <a class="link" href="#">Albumes</a>
+                    <a class="link" href="./contacto.html">Contacto</a>
+                </div>
+            </nav>
+            <button id="btnMenu" class="btnMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
 		<div>
-			<a href="../index.html"><h1 class="m-0">Inicio</h1></a>
+			
 
 			<!-- albumes -->
 			<h2 class="text-center">Álbumes</h2>
@@ -310,5 +326,6 @@
 		</script>
 		<script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script>
 		<script src="../js/glideConfig.js"></script>
+		<script src="../js/burger.js"></script>
 	</body>
 </html>

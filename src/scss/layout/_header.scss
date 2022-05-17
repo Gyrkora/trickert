@@ -78,7 +78,9 @@
 					color: #fafafa;
 					text-decoration: none;
 					font-weight: bold;
+					font-size: 1.5rem;
 					position: relative;
+					font-family: $titulofont;
 					&::after {
 						position: absolute;
 						content: "";
@@ -97,6 +99,7 @@
 		}
 		
 		.btnMenu{
+			margin: 10px;
 			z-index: 200;
 			width: 40px;
 			height: 40px;
