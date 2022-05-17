@@ -3,6 +3,29 @@
 //# Album Section
 
 @media (min-width: $medium) {
+	.hero-Container {
+		height: 40rem;
+
+		.cardHero {
+			grid-template-columns: 50% 50%;
+			grid-template-rows: none;
+
+			.bg-cardHero-I {
+				@include bg-image2('../../img/profilePic1.jpg');
+				max-width: 99%;
+				border-radius: 2rem;
+			}
+		}
+	}
+
+	.bg-cardHero-D {
+		align-items: flex-start;
+		// h2 {
+		// 	font-size: 5rem;
+		// 	color: red;
+		// }
+	}
+
 	footer {
 		display: grid;
 		grid-template-columns: 20% 80%;
@@ -10,7 +33,7 @@
 		justify-content: space-between;
 
 		.logo-footer {
-			background-color: rgba(72, 70, 70, 0.1);
+			background-color: rgba(72, 70, 70, 0.117);
 			-webkit-backdrop-filter: blur(1em);
 			backdrop-filter: blur(1em);
 		}

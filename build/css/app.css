@@ -146,10 +146,6 @@ h4 {
   color: white;
 }
 
-h2 {
-  font-size: 5rem;
-}
-
 a {
   text-decoration: none;
 }
@@ -703,12 +699,12 @@ footer img {
 
 /* navbar */
 /* hero */
-.hero-imgContainer {
+.hero-Container {
   background-image: url("../../img/bgHero-2.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 40rem;
+  height: 30rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -718,30 +714,33 @@ footer img {
   background: url("../../img/bg-card-D.jpg") repeat-x;
   border: 5px solid white;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-rows: 60% 40%;
   margin: 0 2rem;
   border-radius: 2rem;
   height: 60rem;
   max-height: 85%;
   width: 80rem;
 }
-.cardHero .bg-cardHero-I {
+
+.bg-cardHero-I {
   background-image: url("../../img/profilePic1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  max-width: 99%;
+  background-position: bottom center;
+  max-width: 100%;
   border-radius: 2rem;
 }
 
 .bg-cardHero-D {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   justify-content: center;
+  max-width: 80%;
 }
 .bg-cardHero-D h2 {
   margin: 0;
+  font-size: 4rem;
 }
 .bg-cardHero-D div {
   margin: 1rem 0 1rem 4rem;
@@ -841,7 +840,7 @@ footer img {
   width: 1.5rem;
   position: absolute;
   left: 8px;
-  top: 12%;
+  top: 13%;
 }
 
 .caratula2 {
@@ -867,6 +866,26 @@ footer img {
 
 /* Lg - min 1200 */
 @media (min-width: 768px) {
+  .hero-Container {
+    height: 40rem;
+  }
+  .hero-Container .cardHero {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: none;
+  }
+  .hero-Container .cardHero .bg-cardHero-I {
+    background-image: url("../../img/profilePic1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    max-width: 99%;
+    border-radius: 2rem;
+  }
+
+  .bg-cardHero-D {
+    align-items: flex-start;
+  }
+
   footer {
     display: grid;
     grid-template-columns: 20% 80%;
@@ -874,7 +893,7 @@ footer img {
     justify-content: space-between;
   }
   footer .logo-footer {
-    background-color: rgba(72, 70, 70, 0.1);
+    background-color: rgba(72, 70, 70, 0.117);
     -webkit-backdrop-filter: blur(1em);
     backdrop-filter: blur(1em);
   }
