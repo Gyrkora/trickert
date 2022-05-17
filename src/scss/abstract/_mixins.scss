@@ -31,13 +31,14 @@
 }
 @mixin title-genero {
 	width: 75%;
-	padding: 10px 25px;
+	padding: 10px 15px;
 	margin: 15px auto;
 	text-align: center;
 	color: rgb(255, 255, 255);
-	font-size: 2rem;
+	font-size: 1.5rem;
 	backdrop-filter: blur(25px);
 	border-radius: 40px;
+	font-family: $titulofont;
 }
 
 @mixin text-genero {
@@ -46,4 +47,5 @@
 	margin: 70px auto;
 	color: rgb(255, 255, 255);
 	font-size: 1rem;
+	font-family: $global;
 }

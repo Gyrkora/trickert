@@ -16,12 +16,30 @@
 		<title>Inicio</title>
 	</head>
 	<body class="bg-Index">
-		<h3 class="m-0">Este es el inicio</h3>
-
-		<a href="pages/albumes.html"><h3>link a Albumes</h3></a>
-		<a href="pages/genero.html"><h3>link a genero</h3></a>
-
-		<div class="hero-Container">
+		<header class="contHeader">
+			<div class="contLogo">
+				<a href="#"
+					><img
+						class="logo"
+						src="./img/logo/Logo Trickert (Verde Fluor).svg"
+						alt="Trickert"
+				/></a>
+			</div>
+			<nav id="nav" class="menu">
+				<div class="menuLinks">
+					<a class="link" href="#">Inicio</a>
+					<a class="link" href="./pages/genero.html">Mi Trabajo</a>
+					<a class="link" href="./pages/albumes.html">Albumes</a>
+					<a class="link" href="./pages/contacto.html">Contacto</a>
+				</div>
+			</nav>
+			<button id="btnMenu" class="btnMenu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</header>
+		<div class="hero-imgContainer">
 			<div class="cardHero">
 				<div class="bg-cardHero-I"></div>
 
@@ -370,5 +388,6 @@
 		<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 
 		<script src="js/glideConfig.js"></script>
+		<script src="./js/burger.js"></script>
 	</body>
 </html>

@@ -1,5 +1,5 @@
 .generoBg{
-    background-color: rgb(0, 0, 0);
+    @include bg-image2('../../img/bgHero-2.svg');
 
     main{
         .titleG{
@@ -8,11 +8,12 @@
             text-align: center;
             margin: 50px auto;
             font-size: 3rem;
+            font-family: $titulofont;
         }
         .cardGeneroPhonk{
             @include card-genero;
             @include bg-image2('../../img/albums/TokioAlbum.jpg');
-            box-shadow:  -2px -2px 5px rgb(255, 0, 157), 2px 2px 10px rgb(255, 0, 170);
+           
             .difu{
                 @include difuminado(row,space-between);
                 .bgPhonk{
@@ -31,7 +32,7 @@
         .cardGeneroTrap{
             @include card-genero;
             @include bg-image2('../../img/albums/horizonAlbum.jpg');
-            box-shadow: -2px -2px 5px rgb(255, 123, 0), 2px 2px 15px orangered;
+            
             .difu{
                 @include difuminado(row,space-between);
                 .bgTrap{
