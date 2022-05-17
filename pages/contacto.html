@@ -12,13 +12,19 @@
     <body class="contactBg">
         <header class="contHeader">
             <div class="contLogo"><a href="../index.html"><img class="logo" src="../img/logo/Logo Trickert (Verde Fluor).svg" alt="Trickert"></a></div>
-            <nav class="menu">
-                <a href="../index.html">Inicio</a>
-                <a href="./albumes.html">Albumes</a>
-                <a href="./genero.html">Mi Trabajo</a>
-                <a href="#">Contacto</a>
-
+            <nav id="nav" class="menu">
+                <div class="menuLinks">    
+                    <a class="link" href="../index.html">Inicio</a>
+                    <a class="link" href="./genero.html">Mi Trabajo</a>
+                    <a class="link" href="./albumes.html">Albumes</a>
+                    <a class="link" href="#">Contacto</a>
+                </div>
             </nav>
+            <button id="btnMenu" class="btnMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </header>
         <main>
             <h2 class="titleG">Si quieres Contactarnos aca puedes encontrar nuestras redes:</h2>
@@ -67,5 +73,6 @@
 				</div>
 			</div>
 		</footer>
+        <script src="../js/burger.js"></script>
     </body>
 </html>

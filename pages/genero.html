@@ -10,17 +10,21 @@
 		
 	</head>
     <body class="generoBg">
-        <header>
-            <header class="contHeader">
-                <div class="contLogo"><a href="../index.html"><img class="logo" src="../img/logo/Logo Trickert (Verde Fluor).svg" alt="Trickert"></a></div>
-                <nav class="menu">
-                    <a href="../index.html">Home</a>
-                    <a href="#">Mi Trabajo</a>
-                    <a href="./albumes.html">Albumes</a>
-                    <a href="./contacto.html">Contacto</a>
-    
-                </nav>
-            </header>
+        <header class="contHeader">
+            <div class="contLogo"><a href="../index.html"><img class="logo" src="../img/logo/Logo Trickert (Verde Fluor).svg" alt="Trickert"></a></div>
+            <nav id="nav" class="menu">
+                <div class="menuLinks">    
+                    <a class="link" href="../index.html">Inicio</a>
+                    <a class="link" href="#">Mi Trabajo</a>
+                    <a class="link" href="./albumes.html">Albumes</a>
+                    <a class="link" href="./contacto.html">Contacto</a>
+                </div>
+            </nav>
+            <button id="btnMenu" class="btnMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </header>
         <main>
             <h2 class="titleG">Mi Trabajo</h2>
@@ -113,5 +117,6 @@
 				</div>
 			</div>
 		</footer>
+        <script src="../js/burger.js"></script>
     </body>
 </html>

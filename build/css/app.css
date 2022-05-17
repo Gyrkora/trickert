@@ -477,11 +477,11 @@ a {
 }
 .generoBg main .cardGeneroPhonk .difu .bgPhonk .titleG {
   width: 75%;
-  padding: 10px 25px;
+  padding: 10px 15px;
   margin: 15px auto;
   text-align: center;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   backdrop-filter: blur(25px);
   border-radius: 40px;
   font-family: "Fjalla One", sans-serif;
@@ -520,11 +520,11 @@ a {
 }
 .generoBg main .cardGeneroTrap .difu .bgTrap .titleG {
   width: 75%;
-  padding: 10px 25px;
+  padding: 10px 15px;
   margin: 15px auto;
   text-align: center;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   backdrop-filter: blur(25px);
   border-radius: 40px;
   font-family: "Fjalla One", sans-serif;
@@ -593,7 +593,7 @@ footer img {
   text-align: end;
   margin: 10px;
 }
-.contHeader .menu a {
+.contHeader .menu .link {
   font-size: 1.5rem;
   color: white;
   cursor: pointer;
@@ -601,10 +601,102 @@ footer img {
   border-radius: 10px;
   padding: 0 1rem;
 }
-.contHeader .menu a:hover {
+.contHeader .menu .link:hover {
   box-shadow: -2px -2px 5px #48ff00, 2px 2px 5px #48ff00;
 }
+.contHeader .btnMenu {
+  display: none;
+}
 
+/*Responsive menu y navbar*/
+@media screen and (max-width: 768px) {
+  .contHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.877);
+  }
+  .contHeader .contLogo .logo {
+    width: 80px;
+  }
+  .contHeader .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.4s linear;
+    background-color: rgba(20, 20, 20, 0.89);
+    z-index: 100;
+  }
+  .contHeader .menu.show {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .contHeader .menu .menuLinks {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .contHeader .menu .menuLinks .link {
+    margin-top: 5rem;
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+  }
+  .contHeader .menu .menuLinks .link::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: 0.3s ease all;
+  }
+  .contHeader .menu .menuLinks .link:hover::after {
+    width: 100%;
+  }
+  .contHeader .btnMenu {
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .contHeader .btnMenu span {
+    width: 37px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ebebeb;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all 0.2s linear;
+  }
+  .contHeader .btnMenu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #a5a5a5;
+  }
+  .contHeader .btnMenu.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+  }
+  .contHeader .btnMenu.close span:nth-child(3) {
+    display: none;
+  }
+}
 /* hero */
 .hero-imgContainer {
   background-image: url("../../img/bgHero-2.svg");
