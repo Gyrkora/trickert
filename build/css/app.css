@@ -1,5 +1,138 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+.glide {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+.glide * {
+  box-sizing: inherit;
+}
+.glide__track {
+  overflow: hidden;
+}
+.glide__slides {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  touch-action: pan-Y;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+}
+.glide__slides--dragging {
+  user-select: none;
+}
+.glide__slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  white-space: normal;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.glide__slide a {
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.glide__arrows {
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+.glide__bullets {
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+.glide--rtl {
+  direction: rtl;
+}
+
+.glide__arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
+  z-index: 2;
+  color: white;
+  text-transform: uppercase;
+  padding: 9px 12px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 150ms ease, border 300ms ease-in-out;
+  transform: translateY(-50%);
+  line-height: 1;
+}
+.glide__arrow:focus {
+  outline: none;
+}
+.glide__arrow:hover {
+  border-color: white;
+}
+.glide__arrow--left {
+  left: 2em;
+}
+.glide__arrow--right {
+  right: 2em;
+}
+.glide__arrow--disabled {
+  opacity: 0.33;
+}
+.glide__bullets {
+  position: absolute;
+  z-index: 2;
+  bottom: 2em;
+  left: 50%;
+  display: inline-flex;
+  list-style: none;
+  transform: translateX(-50%);
+}
+.glide__bullet {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  line-height: 0;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  margin: 0 0.25em;
+}
+.glide__bullet:focus {
+  outline: none;
+}
+.glide__bullet:hover, .glide__bullet:focus {
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.glide__bullet--active {
+  background-color: white;
+}
+.glide--swipeable {
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+.glide--dragging {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
 body {
   background-color: #2c2929;
 }
@@ -604,105 +737,14 @@ footer img {
   display: none;
 }
 
-/*Responsive menu y navbar*/
-@media screen and (max-width: 768px) {
-  .contHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.877);
-  }
-  .contHeader .contLogo .logo {
-    width: 80px;
-  }
-  .contHeader .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    margin-left: -100%;
-    transition: all 0.4s linear;
-    background-color: rgba(20, 20, 20, 0.89);
-    z-index: 100;
-  }
-  .contHeader .menu.show {
-    margin-top: 0;
-    margin-left: 0;
-  }
-  .contHeader .menu .menuLinks {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .contHeader .menu .menuLinks .link {
-    margin-top: 5rem;
-    color: #fafafa;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
-    position: relative;
-    font-family: "Fjalla One", sans-serif;
-  }
-  .contHeader .menu .menuLinks .link::after {
-    position: absolute;
-    content: "";
-    background-color: black;
-    bottom: -5px;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    transition: 0.3s ease all;
-  }
-  .contHeader .menu .menuLinks .link:hover::after {
-    width: 100%;
-  }
-  .contHeader .btnMenu {
-    margin: 10px;
-    z-index: 200;
-    width: 40px;
-    height: 40px;
-    border: none;
-    display: flex;
-    background: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  .contHeader .btnMenu span {
-    width: 37px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #ebebeb;
-    border-radius: 3px;
-    transform-origin: 4px 0px;
-    transition: all 0.2s linear;
-  }
-  .contHeader .btnMenu.close span {
-    opacity: 1;
-    transform: rotate(45deg) translate(0px, 0px);
-    background: #a5a5a5;
-  }
-  .contHeader .btnMenu.close span:nth-child(2) {
-    transform: rotate(-45deg) translate(-8px, 5px);
-  }
-  .contHeader .btnMenu.close span:nth-child(3) {
-    display: none;
-  }
-}
 /* hero */
 .hero-Container {
   background-image: url("../../img/bgHero-2.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 30rem;
+  margin: 0 auto;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -715,9 +757,10 @@ footer img {
   grid-template-rows: 60% 40%;
   margin: 0 2rem;
   border-radius: 2rem;
-  height: 60rem;
+  height: 35rem;
   max-height: 85%;
   width: 80rem;
+  max-width: 95%;
 }
 
 .bg-cardHero-I {
@@ -927,7 +970,98 @@ footer img {
   margin: 5px 25px 0px 10px;
 }
 
-/* Lg - min 1200 */
+/*Responsive menu y navbar*/
+@media screen and (max-width: 768px) {
+  .contHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.877);
+  }
+  .contHeader .contLogo .logo {
+    width: 80px;
+  }
+  .contHeader .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.4s linear;
+    background-color: rgba(20, 20, 20, 0.89);
+    z-index: 100;
+  }
+  .contHeader .menu.show {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .contHeader .menu .menuLinks {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .contHeader .menu .menuLinks .link {
+    margin-top: 5rem;
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+    font-family: "Fjalla One", sans-serif;
+  }
+  .contHeader .menu .menuLinks .link::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: 0.3s ease all;
+  }
+  .contHeader .menu .menuLinks .link:hover::after {
+    width: 100%;
+  }
+  .contHeader .btnMenu {
+    margin: 10px;
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .contHeader .btnMenu span {
+    width: 37px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ebebeb;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all 0.2s linear;
+  }
+  .contHeader .btnMenu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #a5a5a5;
+  }
+  .contHeader .btnMenu.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+  }
+  .contHeader .btnMenu.close span:nth-child(3) {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .hero-Container {
     height: 40rem;
@@ -941,12 +1075,15 @@ footer img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    max-width: 99%;
+    max-width: 90%;
     border-radius: 2rem;
   }
 
   .bg-cardHero-D {
     align-items: flex-start;
+  }
+  .bg-cardHero-D h2 {
+    font-size: 5rem;
   }
 
   footer {
