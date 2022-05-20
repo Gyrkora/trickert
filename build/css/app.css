@@ -150,10 +150,6 @@ a {
   text-decoration: none;
 }
 
-main {
-  margin-bottom: 5rem;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -920,13 +916,13 @@ footer img {
   background-position: center center;
   backdrop-filter: blur(5px);
 }
-.contactBg main .titleC {
+.contactBg .titleC {
   font-family: "Fjalla One", sans-serif;
   font-size: 2rem;
   margin: 20px auto;
   text-align: center;
 }
-.contactBg main .contRedes {
+.contactBg .contRedes {
   width: 80%;
   margin: 25px auto;
   padding: 2rem;
@@ -937,56 +933,56 @@ footer img {
   align-items: flex-start;
   justify-content: space-around;
 }
-.contactBg main .contRedes .izq {
+.contactBg .contRedes .izq {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.contactBg main .contRedes .izq .titleRed {
+.contactBg .contRedes .izq .titleRed {
   text-align: center;
   margin-bottom: 25px;
   font-family: "Lato", sans-serif;
   font-size: 1.3rem;
 }
-.contactBg main .contRedes .izq .linkRedes {
-  width: 50%;
+.contactBg .contRedes .izq .linkRedes {
+  width: 70%;
   margin-bottom: 15px;
   padding: 0 1rem;
   background: white;
   border-radius: 25px;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
-.contactBg main .contRedes .izq .linkRedes img {
+.contactBg .contRedes .izq .linkRedes img {
   width: 20px;
   margin: 5px 25px 0px 10px;
 }
-.contactBg main .contRedes .der {
-  width: 50%;
+.contactBg .contRedes .der {
+  width: 80%;
   border-left: 2px solid white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.contactBg main .contRedes .der .titleRed {
+.contactBg .contRedes .der .titleRed {
   text-align: center;
   margin-bottom: 25px;
   font-family: "Lato", sans-serif;
   font-size: 1.3rem;
 }
-.contactBg main .contRedes .der .linkRedes {
+.contactBg .contRedes .der .linkRedes {
   width: 50%;
   margin-bottom: 15px;
   padding: 0 1rem;
   background: white;
   border-radius: 25px;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
-.contactBg main .contRedes .der .linkRedes img {
+.contactBg .contRedes .der .linkRedes img {
   width: 20px;
   margin: 5px 25px 0px 10px;
 }
@@ -1137,6 +1133,32 @@ footer img {
 
   .album-responsive {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contactBg main .titleC {
+    font-size: 1.5rem;
+  }
+  .contactBg main .contRedes {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactBg main .contRedes .izq .linkRedes {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .contactBg main .contRedes .der {
+    border-top: 2px solid white;
+    border-left: hidden;
+  }
+  .contactBg main .contRedes .der .linkRedes {
+    width: 80%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
   }
 }
 
