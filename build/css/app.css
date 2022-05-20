@@ -150,6 +150,10 @@ a {
   text-decoration: none;
 }
 
+main {
+  margin-bottom: 5rem;
+}
+
 .container {
   display: flex;
   flex-direction: column;
