@@ -946,6 +946,19 @@ footer img {
   font-family: "Lato", sans-serif;
   font-size: 1.3rem;
 }
+.contactBg main .contRedes .izq .linkRedes {
+  width: 50%;
+  margin-bottom: 15px;
+  padding: 0 1rem;
+  background: white;
+  border-radius: 25px;
+  color: black;
+  font-size: 1.5rem;
+}
+.contactBg main .contRedes .izq .linkRedes img {
+  width: 20px;
+  margin: 5px 25px 0px 10px;
+}
 .contactBg main .contRedes .der {
   width: 50%;
   border-left: 2px solid white;
