@@ -155,3 +155,39 @@
 		display: none;
 	}
 }
+
+
+//Responsive Seccion CONTACTO
+
+@media screen and (max-width: 768px) {
+    .contactBg{
+        main{
+            .titleC{
+                font-size: 1.5rem;
+            }
+            .contRedes{    
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+				.izq{
+					.linkRedes{
+						width: 100%;
+						padding: 0.5rem;
+						font-size: 1.2rem;
+					}
+				}
+				.der{
+					border-top: 2px solid white;
+					border-left: hidden;
+					.linkRedes{
+						width: 80%;
+						padding: 0.5rem;
+						font-size: 1.2rem;
+					}
+				}
+            }
+        }
+    }
+}
