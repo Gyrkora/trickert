@@ -705,6 +705,29 @@ footer img {
   margin: 2rem 0;
 }
 
+.postFooter .postFooter-barra {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+.postFooter .postFooter-barra span {
+  font-weight: bold;
+}
+.postFooter .postFooter-barra p {
+  margin: 0.5rem 0;
+}
+.postFooter .postFooter-barra a {
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.postFooter .postFooter-barra a:last-of-type:hover {
+  color: #00ffb9;
+}
+.postFooter .postFooter-barra a:hover {
+  color: #e300e3;
+}
+
 /* navbar */
 .contHeader {
   width: 100%;
@@ -731,6 +754,7 @@ footer img {
   margin: 2px;
   border-radius: 10px;
   padding: 0 1rem;
+  transition: all 0.3s ease-in-out;
 }
 .contHeader .menu .link:hover {
   box-shadow: -2px -2px 5px #48ff00, 2px 2px 5px #48ff00;
@@ -766,7 +790,7 @@ footer img {
 }
 
 .bg-cardHero-I {
-  background-image: url("../../img/profilePic1.jpg");
+  background-image: url("../../img/m2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -1080,6 +1104,19 @@ footer img {
   }
 }
 @media (min-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .logo-footer {
+    background-color: rgba(72, 70, 70, 0.117);
+    -webkit-backdrop-filter: blur(1em);
+    backdrop-filter: blur(1em);
+  }
+}
+@media (min-width: 905px) {
   .hero-Container {
     height: 40rem;
   }
@@ -1101,18 +1138,6 @@ footer img {
   }
   .bg-cardHero-D h2 {
     font-size: 5rem;
-  }
-
-  footer {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    align-items: center;
-    justify-content: space-between;
-  }
-  footer .logo-footer {
-    background-color: rgba(72, 70, 70, 0.117);
-    -webkit-backdrop-filter: blur(1em);
-    backdrop-filter: blur(1em);
   }
 }
 @media (min-width: 1080px) {

@@ -41,3 +41,36 @@ footer {
 		margin: 2rem 0;
 	}
 }
+
+.postFooter {
+	.postFooter-barra {
+		max-width: 80%;
+		text-align: center;
+
+		margin: 0 auto;
+		padding: 1rem 0;
+
+		span {
+			font-weight: bold;
+		}
+
+		p {
+			margin: 0.5rem 0;
+		}
+
+		a {
+			color: white;
+			transition: all 0.5s ease-in-out;
+
+			&:last-of-type {
+				&:hover {
+					color: $greenFluor;
+				}
+			}
+
+			&:hover {
+				color: $violet;
+			}
+		}
+	}
+}

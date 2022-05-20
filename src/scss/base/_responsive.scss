@@ -96,6 +96,21 @@
 }
 
 @media (min-width: $medium) {
+	footer {
+		display: grid;
+		grid-template-columns: 20% 80%;
+		align-items: center;
+		justify-content: space-between;
+
+		.logo-footer {
+			background-color: rgba(72, 70, 70, 0.117);
+			-webkit-backdrop-filter: blur(1em);
+			backdrop-filter: blur(1em);
+		}
+	}
+}
+
+@media (min-width: 905px) {
 	.hero-Container {
 		height: 40rem;
 
@@ -117,22 +132,6 @@
 			font-size: 5rem;
 		}
 	}
-
-	footer {
-		display: grid;
-		grid-template-columns: 20% 80%;
-		align-items: center;
-		justify-content: space-between;
-
-		.logo-footer {
-			background-color: rgba(72, 70, 70, 0.117);
-			-webkit-backdrop-filter: blur(1em);
-			backdrop-filter: blur(1em);
-		}
-	}
-}
-
-@media (min-width: $xl) {
 }
 
 @media (min-width: $large) {
@@ -156,38 +155,37 @@
 	}
 }
 
-
 //Responsive Seccion CONTACTO
 
 @media screen and (max-width: 768px) {
-    .contactBg{
-        main{
-            .titleC{
-                font-size: 1.5rem;
-            }
-            .contRedes{    
-                width: 80%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-				.izq{
-					.linkRedes{
+	.contactBg {
+		main {
+			.titleC {
+				font-size: 1.5rem;
+			}
+			.contRedes {
+				width: 80%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				.izq {
+					.linkRedes {
 						width: 100%;
 						padding: 0.5rem;
 						font-size: 1.2rem;
 					}
 				}
-				.der{
+				.der {
 					border-top: 2px solid white;
 					border-left: hidden;
-					.linkRedes{
+					.linkRedes {
 						width: 80%;
 						padding: 0.5rem;
 						font-size: 1.2rem;
 					}
 				}
-            }
-        }
-    }
+			}
+		}
+	}
 }

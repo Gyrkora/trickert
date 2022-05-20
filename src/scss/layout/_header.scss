@@ -24,6 +24,8 @@
 			margin: 2px;
 			border-radius: 10px;
 			padding: 0 1rem;
+
+			transition: all 0.3s ease-in-out;
 			&:hover {
 				box-shadow: -2px -2px 5px rgb(72, 255, 0), 2px 2px 5px rgb(72, 255, 0);
 			}
@@ -62,7 +64,7 @@
 
 .bg-cardHero-I {
 	background: {
-		image: url('../../img/profilePic1.jpg');
+		image: url('../../img/m2.jpg');
 		repeat: no-repeat;
 		size: cover;
 		position: bottom center;
