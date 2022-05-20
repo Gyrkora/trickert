@@ -674,6 +674,7 @@ footer {
   justify-content: center;
   text-align: center;
   width: 100%;
+  padding: 2rem 0;
   background-image: url("../../img/bgAlbumes.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -688,6 +689,7 @@ footer img {
   align-items: center;
   justify-content: center;
   height: 100%;
+  padding: 2rem 0;
 }
 .logo-footer img {
   width: 5rem;
@@ -865,11 +867,13 @@ footer img {
   align-items: center;
   justify-content: center;
   padding: 2rem 0;
+  max-width: 99%;
 }
 .cInicio-abajo button {
   margin: 1rem auto;
   padding: 0.5rem 0;
   width: 15rem;
+  max-width: 90%;
   border-radius: 2rem;
   background-color: #393737;
   color: white;

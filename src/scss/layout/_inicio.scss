@@ -31,14 +31,13 @@
 	background-color: #1a1818;
 	max-width: 70%;
 	border-radius: 2rem;
-	// height: 40rem;
 }
 
 .cInicio-Card {
 	width: 95%;
 	margin: 0 auto;
+
 	text-align: center;
-	// height: 40rem;
 
 	div {
 		margin: 0 auto;
@@ -74,11 +73,13 @@
 	align-items: center;
 	justify-content: center;
 	padding: 2rem 0;
+	max-width: 99%;
 
 	button {
 		margin: 1rem auto;
 		padding: 0.5rem 0;
 		width: 15rem;
+		max-width: 90%;
 		border-radius: 2rem;
 		background-color: #393737;
 		color: white;
